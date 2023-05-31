@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Conditional Form</title>
+</head>
+<!-- created by Luc https://accolades.dev -->
+<body>
+    <!-- Place the desired title  -->
+  <h1>Conditional Form</h1> 
+  <form id="myForm" action="#">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="phone">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <!-- <input type="text" id="city" name="city" list="cities" required> -->
+      <!-- <datalist id="cities">
+        Add options from API here 
+      </datalist> -->
+      <select name="cities" id="cities">
+        <option value="chose an option">Chose a city</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Toledo">Toledo</option>
+        <option value="Barcelona">Barcelona</option>
+      </select>
+      
+    </div>
+    <div class="device">
+      <label for="device">Device:</label>
+      <select id="device" name="device" onchange="showOptions()">
+        <option value="" selected disabled>Select a device</option>
+        <option value="iphone">iPhone</option>
+        <option value="ipad">iPad</option>
+      </select>
+    </div>
+    <div id="iphoneOptions" class="hidden">
+      <label for="iphoneModel">iPhone Model:</label>
+      <select id="iphoneModel" name="iphoneModel" onchange="showColor()">
+        <option value="" selected disabled>Select a model</option>
+        <option value="iPhone 14">iPhone 14</option>
+        <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+        <option value="iPhone 13">iPhone 13</option>
+        <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+        <option value="other">Other Model of iPhone</option>
+      </select>
+    </div>
+    <div id="iphoneOtherModel" class="hidden">
+      <label for="otherModel">Other Model:</label>
+      <input type="text" id="otherModel" name="otherModel">
+    </div>
+    <div id="iphoneColor" class="hidden">
+      <label for="iphoneColor">Color:</label>
+      <input type="text" id="iphoneColor" name="iphoneColor">
+    </div>
+    <div id="iphoneStorage" class="hidden">
+      <label for="iphoneStorage">Storage:</label>
+      <select id="iphoneStorage" name="iphoneStorage">
+        <option value="32GB">32GB</option>
+        <option value="64GB">64GB</option>
+        <option value="128GB">128GB</option>
+        <option value="256GB">256GB</option>
+        <option value="512GB">512GB</option>
+        <option value="1TB">1TB</option>
+        <option value="2TB">2TB</option>
+        <option value="other">Add other storage option on the message field</option>
+      </select>
+    </div>
+    <div id="iphoneOtherStorage" class="hidden">
+      <label for="otherStorage">Other iPhone Model and Storage:</label>
+      <input type="text" id="otherStorage" name="otherStorage">
+    </div>
+    <div id="ipadOptions" class="hidden">
+      <label for="ipadModel">iPad Model:</label>
+      <select id="ipadModel" name="ipadModel" onchange="showColor()">
+        <option value="" selected disabled>Select a model</option>
+        <option value="iPad Air">iPad Air</option>
+        <option value="iPad Pro">iPad Pro</option>
+        <option value="iPad Mini">iPad Mini</option>
+        <option value="other">Other Model of iPad</option>
+      </select>
+    </div>
+    <div id="ipadOtherModel" class="hidden">
+      <label for="otherModel">Other Model:</label>
+      <input type="text" id="otherModel" name="otherModel">
+    </div>
+    <div id="ipadColor" class="hidden">
+      <label for="ipadColor">Color:</label>
+      <input type="text" id="ipadColor" name="ipadColor">
+    </div>
+    <div id="ipadStorage" class="hidden">
+      <label for="ipadStorage">Storage:</label>
+      <select id="ipadStorage" name="ipadStorage">
+        <option value="32GB">32GB</option>
+        <option value="64GB">64GB</option>
+        <option value="128GB">128GB</option>
+        <option value="256GB">256GB</option>
+        <option value="512GB">512GB</option>
+        <option value="1TB">1TB</option>
+        <option value="2TB">2TB</option>
+        <option value="other">Add other storage option on the message field</option>
+      </select>
+    </div>
+    <div id="ipadOtherStorage" class="hidden">
+      <label for="otherStorage">Other iPad Model and Storage:</label>
+      <input type="text" id="otherStorage" name="otherStorage">
+    </div>
+    <div class="message">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"placeholder="Add the storage or model if it isn't present"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
