@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Conditional Form</title>
 </head>
-<!-- created by Luc aka Accolades.Dev https://accolades.dev -->
+<!-- created by Luc https://accolades.dev -->
 <body>
     <!-- Place the desired title  -->
   <h1>Conditional Form</h1> 
@@ -120,8 +120,10 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message"placeholder="Add the storage or model if it isn't present"></textarea>
     </div>
-    <div>
-      <input type="submit" value="Submit">
+      <div>
+        <input type="submit" value="Submit">
+        <button id="refresh" type="button"  onclick="refreshPage()">Start Again</button>
+      </div>
     </div>
   </form>
   <script src="script.js"></script>

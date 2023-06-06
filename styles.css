@@ -1,54 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  /* choose your desired fonts */
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  #cities{
-    margin-bottom: 30px;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  .device, .message, #iphoneOptions, #ipadOptions {
-    margin-top:15px
-  }
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  
-  input,
-  select,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-  }
-  
-  input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+#cities{
+  margin-bottom: 30px;
+}
+
+.device, .message, #iphoneOptions, #ipadOptions {
+  margin-top:15px
+}
+
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#refresh {
+  background-color: #f89a6bed;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
